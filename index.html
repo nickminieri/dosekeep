@@ -1,95 +1,136 @@
+---
+title: "DoseKeep: a private medication reminder for iPhone"
+description: "DoseKeep is a free iPhone medication reminder for people, kids and pets. It reminds you again if you forget. No account, no ads, no data collected."
+image: /icon.png
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DoseKeep — Privacy &amp; Support</title>
-  <style>
-    :root { --teal: #1f9e8f; --ink: #1b1b1f; --muted: #5f6168; --bg: #f7f8fa; --card: #ffffff; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--ink);
-      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
-    header { text-align: center; padding: 24px 0 8px; }
-    .logo {
-      width: 72px; height: 72px; border-radius: 18px; background: var(--teal);
-      display: inline-flex; align-items: center; justify-content: center;
-      color: #fff; font-size: 34px; font-weight: 700; box-shadow: 0 6px 18px rgba(31,158,143,.35);
-    }
-    h1 { font-size: 28px; margin: 16px 0 4px; }
-    .tagline { color: var(--muted); margin: 0 0 8px; }
-    .card { background: var(--card); border-radius: 16px; padding: 24px 28px; margin: 20px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-    h2 { font-size: 19px; margin: 28px 0 8px; }
-    h2:first-child { margin-top: 0; }
-    a { color: var(--teal); }
-    .updated { color: var(--muted); font-size: 14px; }
-    .pill { display:inline-block; background:#e8f5f3; color:var(--teal); border-radius:999px;
-            padding:4px 12px; font-size:13px; font-weight:600; margin-bottom:12px; }
-    footer { text-align:center; color: var(--muted); font-size: 13px; margin-top: 40px; }
-    .support a { font-weight: 600; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DoseKeep: a private medication reminder for iPhone</title>
+<meta name="apple-itunes-app" content="app-id=6783024511">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "DoseKeep",
+  "alternateName": "DoseKeep: Medication Reminder",
+  "description": "A private medication reminder for iPhone: people, kids and pets on one list, follow-up reminders, refill notes, and a night sky that lights a star for every dose. No account, no ads, no data collected.",
+  "url": "https://nickminieri.github.io/dosekeep/",
+  "installUrl": "https://apps.apple.com/app/id6783024511",
+  "image": "https://nickminieri.github.io/dosekeep/icon.png",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "fileSize": "8.7 MB",
+  "contentRating": "4+",
+  "datePublished": "2026-06-25",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download and use. Optional DoseKeep Plus: $9.99 once."
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Nick Minieri"
+  },
+  "sameAs": "https://apps.apple.com/app/id6783024511"
+}
+</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="logo">℞</div>
-      <h1>DoseKeep</h1>
-      <p class="tagline">Private medication reminders &amp; tracking</p>
-    </header>
-
-    <div class="card" id="about">
-      <span class="pill">About</span>
-      <h2>About DoseKeep</h2>
-<p><strong>What it is:</strong> A medication reminder for the whole household: people, kids, and pets on one list, reminders that nag until logged, refill tracking with a one-tap Refill button, tapers, and a night-sky home screen widget.</p>
-<p><strong>Who it is for:</strong> Anyone taking daily medication, and caregivers managing medication for family members or pets.</p>
-<p><strong>Price:</strong> Free. One optional one-time Plus purchase. No subscription, no ads.</p>
-<p><strong>Privacy:</strong> No account, no analytics, no data collected. Everything stays on your iPhone. Works offline.</p>
-<p><strong>Platform and languages:</strong> iPhone (iOS 17 or later). English and German.</p>
-<p><strong>Made by:</strong> Nick Minieri, one person in the United States. <a href="https://apps.apple.com/app/id6783024511">App Store listing</a>.</p>
+<div class="sky">
+  <div class="hero">
+    <div>
+      <a class="brand" href="./"><img src="icon.png" alt="DoseKeep app icon" width="44" height="44">DoseKeep</a>
+      <h1>Reminds you again<br>if you forget</h1>
+      <p class="sub">A follow-up at 30 minutes, another at two hours if you ask. Then quiet.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6783024511"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
+      <p class="small">Free. No account. No ads.</p>
     </div>
-
-    <div class="card support" id="support">
-      <span class="pill">Support</span>
-      <h2>Need help?</h2>
-      <p>Questions, bug reports, or feedback about DoseKeep? Email us and we'll get back to you:</p>
-      <p style="font-size:18px;"><a href="mailto:minieriapps+dosekeep@gmail.com">minieriapps+dosekeep@gmail.com</a></p>
-    </div>
-
-    <div class="card" id="privacy">
-      <span class="pill">Privacy Policy</span>
-      <p class="updated">Last updated: June 22, 2026</p>
-
-      <p>DoseKeep is designed to be private by default. This policy explains what that means in plain language.</p>
-
-      <h2>The short version</h2>
-      <p><strong>DoseKeep does not collect, transmit, sell, or share any of your data.</strong> Everything you enter — your medications, schedules, and dose history — is stored only on your iPhone. There is no account, no login, and no server. The app does not connect to the internet to send your information anywhere.</p>
-
-      <h2>What we collect</h2>
-      <p><strong>Nothing.</strong> DoseKeep has no analytics, no advertising, no trackers, and no third-party SDKs. We have no servers and no way to see your data.</p>
-
-      <h2>Where your data lives</h2>
-      <p>All of your information is stored locally on your device using Apple's on-device database (SwiftData). It is included in your device's normal encrypted backups (iCloud Backup or a local Finder backup) if you have those enabled — that is handled entirely by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, not by us.</p>
-
-      <h2>Notifications</h2>
-      <p>DoseKeep uses local notifications to remind you to take your medications. These are scheduled and delivered entirely on your device by iOS. They are never sent through any server.</p>
-
-      <h2>Exporting your data</h2>
-      <p>You can export your medication history as a PDF or CSV file. When you choose to export, the file is created on your device and shared only through the destinations you pick in the iOS share sheet (for example, Mail, Messages, or Files). DoseKeep does not receive a copy of anything you export.</p>
-
-      <h2>Children's privacy</h2>
-      <p>DoseKeep does not collect any data from anyone, including children.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>If this policy ever changes, the updated version will be posted here with a new "Last updated" date.</p>
-
-      <h2>Contact</h2>
-      <p>Questions about this policy? Contact: <a href="mailto:minieriapps+dosekeep@gmail.com">minieriapps+dosekeep@gmail.com</a></p>
-    </div>
-
-    <footer>© 2026 DoseKeep. Made with care for people who just want to remember their meds.</footer>
+    <img class="phone" src="img/today.webp" alt="DoseKeep's Today screen: the next dose at 8:00 PM, a Mark taken button and a night sky of stars" width="720" height="1469">
   </div>
+</div>
+
+<main>
+  <p class="lede" id="about">DoseKeep is a medication reminder for iPhone. If you forget a dose, it reminds you again, and then it goes quiet.</p>
+  <p>People, kids and pets go on one list, with no cap on medications. It tells you a week before a refill runs out, and every dose you log lights a star in a night sky. Everything stays on your iPhone. There is no account and no cloud.</p>
+</main>
+
+<div class="three">
+  <figure>
+    <img src="img/refill.webp" alt="A refill sheet: capsules on hand and how many were picked up" width="720" height="1469" loading="lazy">
+    <h3 class="big">Knows when you'll run out</h3>
+    <p>A note a week before, and again two days before.</p>
+  </figure>
+  <figure>
+    <img src="img/profiles.webp" alt="A pet's profile with its own medication list" width="720" height="1469" loading="lazy">
+    <h3 class="big">One list for the whole house</h3>
+    <p>Parents, kids and pets. No cap on medications.</p>
+  </figure>
+  <figure>
+    <img src="img/sky.webp" alt="The night sky: stars gathered into constellations" width="720" height="1469" loading="lazy">
+    <h3 class="big">Every dose lights a star</h3>
+    <p>Stars gather into constellations. A missed dose never dims anything.</p>
+  </figure>
+</div>
+
+<main>
+  <h2 id="facts">The details</h2>
+  <dl class="facts">
+    <dt>Price</dt><dd>Free. Plus is optional: $9.99 once (US price). No subscription.</dd>
+    <dt>Ads</dt><dd>None</dd>
+    <dt>Account</dt><dd>None. No sign-up, no server.</dd>
+    <dt>Privacy label</dt><dd>Data Not Collected</dd>
+    <dt>Works offline</dt><dd>Yes</dd>
+    <dt>Needs</dt><dd>An iPhone with iOS 17.0 or later.</dd>
+    <dt>Size</dt><dd>8.7 MB</dd>
+    <dt>Languages</dt><dd>English, German, French</dd>
+    <dt>Category</dt><dd>Medical</dd>
+    <dt>Age rating</dt><dd>4+</dd>
+    <dt>First released</dt><dd>June 25, 2026</dd>
+    <dt>On the App Store as</dt><dd><a href="https://apps.apple.com/app/id6783024511">DoseKeep: Medication Reminder</a></dd>
+    <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+  </dl>
+  <p class="soft" style="margin-top:12px">Checked against the App Store listing on November 10, 2026.</p>
+
+  <h2 id="support">Support</h2>
+<p>Found a bug, or want something added? Email me at <a href="mailto:minieriapps+dosekeep@gmail.com">minieriapps+dosekeep@gmail.com</a>. I make DoseKeep on my own and read every message. Give me a couple of days to reply.</p>
+
+
+  <h2 id="privacy">Privacy Policy</h2>
+<p class="soft">Last updated: June 22, 2026</p>
+      <p>DoseKeep is designed to be private by default. This policy explains what that means in plain language.</p>
+      <h3>The short version</h3>
+      <p>DoseKeep does not collect, transmit, sell, or share any of your data. Everything you enter (your medications, schedules, and dose history) is stored only on your iPhone. There is no account, no login, and no server. The app does not connect to the internet to send your information anywhere.</p>
+      <h3>What we collect</h3>
+      <p>Nothing. DoseKeep has no analytics, no advertising, no trackers, and no third-party SDKs. We have no servers and no way to see your data.</p>
+      <h3>Where your data lives</h3>
+      <p>All of your information is stored locally on your device using Apple's on-device database (SwiftData). It is included in your device's normal encrypted backups (iCloud Backup or a local Finder backup) if you have those enabled. That is handled entirely by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, not by us.</p>
+      <h3>Notifications</h3>
+      <p>DoseKeep uses local notifications to remind you to take your medications. These are scheduled and delivered entirely on your device by iOS. They are never sent through any server.</p>
+      <h3>Exporting your data</h3>
+      <p>You can export your medication history as a PDF or CSV file. When you choose to export, the file is created on your device and shared only through the destinations you pick in the iOS share sheet (for example, Mail, Messages, or Files). DoseKeep does not receive a copy of anything you export.</p>
+      <h3>Children's privacy</h3>
+      <p>DoseKeep does not collect any data from anyone, including children.</p>
+      <h3>Changes to this policy</h3>
+      <p>If this policy ever changes, the updated version will be posted here with a new "Last updated" date.</p>
+      <h3>Contact</h3>
+      <p>Questions about this policy? Contact: <a href="mailto:minieriapps+dosekeep@gmail.com">minieriapps+dosekeep@gmail.com</a></p>
+<p class="soft">Français : <a href="confidentialite.html">Assistance et politique de confidentialité</a></p>
+
+  <footer>© 2026 Nick Minieri · DoseKeep</footer>
+</main>
 </body>
 </html>
